@@ -38,6 +38,7 @@ const Search = styled.div`
 const Input = styled.input`
     border: none;
     background-color: transparent;
+    outline: none;
 `
 
 const Button = styled.button`
