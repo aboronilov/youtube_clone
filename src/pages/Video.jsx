@@ -5,6 +5,7 @@ import AddTaskOutlinedIcon from "@mui/icons-material/AddTaskOutlined";
 import React from 'react';
 import styled from 'styled-components';
 import Comments from "../components/Comments";
+import Card from "../components/Card";
 
 const Container = styled.div`
     display: flex;
@@ -164,7 +165,15 @@ const Video = () => {
                 </VideoWrapper>
             </Content>
             <Recommendations>
-                recommendations
+                <Card type="sm"/>
+                <Card type="sm"/>
+                <Card type="sm"/>
+                <Card type="sm"/>
+                <Card type="sm"/>
+                <Card type="sm"/>
+                <Card type="sm"/>
+                <Card type="sm"/>
+                <Card type="sm"/>
             </Recommendations>
         </Container>
     );
