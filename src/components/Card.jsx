@@ -51,7 +51,7 @@ const Card = () => {
             <Container>
                 <Image src="https://www.videograbber.net/wp-content/uploads/2017/12/youtube-thumbnail-grabbers.jpg" />
                 <Details>
-                    <ChannelImage src="https://shapka-youtube.ru/wp-content/uploads/2021/03/mrachnaya-avatarka-dlya-parney.jpg" />
+                    <ChannelImage src="https://avatars.githubusercontent.com/u/1486366?v=4" />
                     <Texts>
                         <Title>Test video</Title>
                         <ChannelName>Lama dev</ChannelName>
