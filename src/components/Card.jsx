@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -19,7 +20,7 @@ const Details = styled.div`
     gap: 12px;
 `
 
-const ChannelImage =styled.img`
+const ChannelImage = styled.img`
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -46,17 +47,19 @@ const Info = styled.div`
 
 const Card = () => {
     return (
-        <Container>
-            <Image src="https://www.videograbber.net/wp-content/uploads/2017/12/youtube-thumbnail-grabbers.jpg"/>
-            <Details>
-                <ChannelImage src="https://shapka-youtube.ru/wp-content/uploads/2021/03/mrachnaya-avatarka-dlya-parney.jpg"/>
-                <Texts>
-                    <Title>Test video</Title>
-                    <ChannelName>Lama dev</ChannelName>
-                    <Info>660,998 views • 1 day ago</Info>
-                </Texts>
-            </Details>
-        </Container>
+        <Link to="/video/test" style={{ textDecoration: "none"}}>
+            <Container>
+                <Image src="https://www.videograbber.net/wp-content/uploads/2017/12/youtube-thumbnail-grabbers.jpg" />
+                <Details>
+                    <ChannelImage src="https://shapka-youtube.ru/wp-content/uploads/2021/03/mrachnaya-avatarka-dlya-parney.jpg" />
+                    <Texts>
+                        <Title>Test video</Title>
+                        <ChannelName>Lama dev</ChannelName>
+                        <Info>660,998 views • 1 day ago</Info>
+                    </Texts>
+                </Details>
+            </Container>
+        </Link>
     );
 }
 

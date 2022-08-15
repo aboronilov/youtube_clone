@@ -19,12 +19,13 @@ import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import SettingsBrightnessOutlinedIcon from "@mui/icons-material/SettingsBrightnessOutlined";
+import { Link } from 'react-router-dom';
 
 const Container = styled.div`
     flex: 1;
-    background-color: ${({theme}) => theme.bgLighter};
+    background-color: ${({ theme }) => theme.bgLighter};
     height: 100vh;
-    color: ${({theme}) => theme.text};
+    color: ${({ theme }) => theme.text};
     font-size: 14px;
     position: sticky;
     top: 0;
@@ -56,7 +57,7 @@ const Item = styled.div`
 
 const Hr = styled.hr`
     margin: 15px 0;
-    border: 0.5px soild ${({theme}) => theme.soft};
+    border: 0.5px soild ${({ theme }) => theme.soft};
 `
 
 const Login = styled.div`
@@ -86,17 +87,19 @@ const Button = styled.button`
 const Title = styled.h2`
     font-size: 14px;
     font-weight: 500;
-    color: ${({theme}) => theme.textSoft};
+    color: ${({ theme }) => theme.textSoft};
     margin-bottom: 20px;
 `
 
-const Menu = ({darkMode, setDarkMode}) => {
+const Menu = ({ darkMode, setDarkMode }) => {
     return (
         <Container>
             <Wrapper>
-                <Logo>
-                    <Img src={Logotype}></Img>BoronilovTube
-                </Logo>
+                <Link to="/" style={{ textDecoration: "none", color: "inherit"}}>
+                    <Logo>
+                        <Img src={Logotype}></Img>BoronilovTube
+                    </Logo>
+                </Link>
                 <Item>
                     <HomeIcon />
                     Home
@@ -110,7 +113,7 @@ const Menu = ({darkMode, setDarkMode}) => {
                     Subscriptions
                 </Item>
                 <Hr></Hr>
-                <Item>  
+                <Item>
                     <VideoLibraryOutlinedIcon />
                     Library
                 </Item>
@@ -120,7 +123,7 @@ const Menu = ({darkMode, setDarkMode}) => {
                 </Item>
                 <Login>
                     Sign up to like videos, comment and subscribe
-                    <Button><AccountCircleOutlinedIcon/>SIGN IN</Button>
+                    <Button><AccountCircleOutlinedIcon />SIGN IN</Button>
                 </Login>
                 <Hr></Hr>
                 <Title>
